@@ -1,12 +1,8 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 
+/* Root Variables */
 :root {
-  --mainTextColor-light: #000;
-  --secondaryTextColor-light: rgb(51 51 51);
-  --mainLinkColor-light: #0da2b8;
-  --mainBorderColor-light: rgb(218, 218, 218);
-  --mainBgColor-light: rgb(249, 250, 251);
-
   --mainTextColor-dark: #fff;
   --secondaryTextColor-dark: #adb0b1;
   --mainLinkColor-dark: rgb(30, 190, 214);
@@ -20,6 +16,7 @@
   --mainBgColor: var(--mainBgColor-dark);
 }
 
+/* Global Styles */
 * {
   font-family: "Readex Pro";
   line-height: 1.5em;
@@ -29,6 +26,9 @@
 
 body {
   background-color: var(--mainBgColor);
+  max-width: 43.75rem;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 p,
@@ -48,14 +48,9 @@ li {
   line-height: 1.9em;
 }
 
+/* Reset default font style of address element */
 address {
   font-style: normal;
-}
-
-#container--main {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 1em;
 }
 
 .section--page {
@@ -63,69 +58,72 @@ address {
   padding-bottom: 1em;
 }
 
-#wrapper--hero {
+/* Hero Section */
+header {
   display: flex;
   align-items: center;
+  flex-direction: row;
   gap: 4em;
 }
 
-#bio,
-a {
-  font-weight: 300;
-}
-
-#user-name {
-  font-size: 48px;
+.user-name {
+  font-size: 3rem;
   line-height: 1em;
 }
 
-#profile-pic {
-  width: 150px;
-  height: 150px;
+.profile-pic {
+  width: 9.375rem;
+  height: 9.375rem;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 1px 1px #2b3031, 0 2px 2px #2b3031, 0 4px 4px #2b3031,
+    0 8px 8px #2b3031, 0 16px 16px #2b3031;
 }
 
-#email {
+.email {
   color: var(--mainTextColor);
 }
 
-#socials--list {
+.socials--list {
   display: flex;
+  row-gap: 1em;
   justify-content: space-between;
-  column-gap: 1em;
   flex-wrap: wrap;
 }
 
-#socials--list a {
+/* Social Links */
+.socials--list a {
   font-weight: 300;
   color: var(--secondaryTextColor);
   font-size: 0.9em;
   transition: 0.3s;
 }
 
-#socials--list a:hover {
-  font-weight: 100;
+/* Hover effect for Social Links */
+.socials--list a:hover {
+  font-weight: 300;
   color: var(--mainLinkColor);
   font-size: 0.9em;
 }
 
-#qualifications--list {
-  padding-left: 1rem;
+/* Qualifications Section */
+.qualifications--list {
+  padding-left: 3rem;
 }
 
-#qualifications--list li {
+.qualifications--list li {
   padding-left: 0.5rem;
 }
 
-#qualifications--list li::marker {
+.qualifications--list li::marker {
   content: "\2714 ";
   color: #1ebed6;
   font-size: 1.2em;
   padding-right: 0.5rem;
 }
 
-#wrapper--techstack__items {
+/* Tech Stack Section */
+.wrapper--techstack__items {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -139,6 +137,7 @@ a {
   align-items: center;
 }
 
+/* Project Card Styles */
 .card--project {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -147,7 +146,6 @@ a {
 
 .card--project a {
   color: var(--mainTextColor);
-
   transition: 0.3s;
 }
 
@@ -155,6 +153,7 @@ a {
   color: rgb(30, 190, 214);
 }
 
+/* Work History Section */
 .card--work-history {
   border-left: 1px solid var(--mainBorderColor);
   margin-top: 3em;
@@ -162,24 +161,59 @@ a {
   padding-left: 2em;
 }
 
+/* Footer Section */
+footer {
+  text-align: center;
+  border-top: 2px solid var(--secondaryTextColor);
+}
+
+.copyright {
+  font-size: small;
+}
+
+/* Line Break Styles */
 .line-break {
   background-color: var(--mainBorderColor);
   height: 1px;
 }
 
-@media (max-width: 600px) {
-  #user-name {
-    font-size: 40px;
-    line-height: 1em;
-    text-align: center;
+/* Media Query for Medium Screens */
+@media (max-width: 768px) {
+  body {
+    width: 80dvw;
   }
 
-  #bio {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .profile-pic {
+    width: 10rem;
+    height: 10rem;
+    filter: drop-shadow();
+  }
+
+  .user-name {
+    font-size: 2.125rem;
+    line-height: 1em;
+    text-align: start;
+  }
+
+  .bio {
     text-align: justify;
   }
 
   address {
-    text-align: end;
+    text-align: start;
+  }
+
+  .section--page:first-of-type {
+    padding-top: 2em;
+    padding-bottom: 1em;
   }
 
   .section--page {
@@ -187,23 +221,44 @@ a {
     padding-bottom: 1em;
   }
 
-  #wrapper--hero {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-  }
-
-  #profile-pic {
-    width: 200px;
-    height: 200px;
-  }
-
-  #wrapper--hero {
-    flex-direction: column;
-  }
-
   .card--work-history {
     border-left: none;
     padding-left: 0;
+  }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 640px) {
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .user-name {
+    font-size: 2rem;
+    line-height: 1em;
+    text-align: center;
+  }
+}
+
+/* Media Query for Extra Small Screens */
+@media (max-width: 360px) {
+  .user-name {
+    font-size: 1.5rem;
+  }
+
+  .socials--list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  .qualifications--list {
+    padding-left: 1rem;
   }
 }
