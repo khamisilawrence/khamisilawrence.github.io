@@ -48,14 +48,54 @@ li {
   line-height: 1.9em;
 }
 
+header,
+section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 /* Reset default font style of address element */
 address {
   font-style: normal;
 }
 
-.section--page {
-  padding-top: 1em;
-  padding-bottom: 1em;
+/* Scrollbar Styles */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1ebed6 #464f51;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #464f51;
+  border: 1px solid #131415;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #464f51;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #464f51;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #1ebed6;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #38cce3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #38cce3;
 }
 
 /* Hero Section */
@@ -99,7 +139,6 @@ header {
   transition: 0.3s;
 }
 
-/* Hover effect for Social Links */
 .socials--list a:hover {
   font-weight: 300;
   color: var(--mainLinkColor);
@@ -189,6 +228,8 @@ footer {
     justify-content: space-around;
     flex-direction: row;
     gap: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
   }
 
   .profile-pic {
@@ -211,12 +252,7 @@ footer {
     text-align: start;
   }
 
-  .section--page:first-of-type {
-    padding-top: 2em;
-    padding-bottom: 1em;
-  }
-
-  .section--page {
+  section {
     padding-top: 1em;
     padding-bottom: 1em;
   }
