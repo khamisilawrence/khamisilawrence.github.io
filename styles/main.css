@@ -29,13 +29,39 @@ body {
   max-width: 43.75rem;
   margin: 0 auto;
   padding: 1em;
+  @media (max-width: 768px) {
+    width: 80dvw;
+  }
+}
+
+h2 {
+  @media (max-width: 400px) {
+    font-size: 1.375em;
+  }
+  @media (max-width: 360px) {
+    font-size: 1.125rem;
+  }
+  @media (max-width: 300px) {
+    font-size: 0.95rem;
+  }
+}
+
+strong {
+  @media (max-width: 460px) {
+    font-size: 0.875em;
+  }
 }
 
 p,
 span,
+time,
 li {
   color: var(--secondaryTextColor);
   font-size: 1em;
+}
+
+li {
+  line-height: 1.9em;
 }
 
 a {
@@ -44,19 +70,31 @@ a {
   font-weight: 500;
 }
 
-li {
-  line-height: 1.9em;
-}
-
-header,
 section {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  @media (max-width: 300px) {
+    padding-block: 0.5em;
+  }
+  /* Section within header */
+  &:first-of-type {
+    @media (max-width: 420px) {
+      padding-block: 0.5em;
+    }
+  }
+  /* Socials Section */
+  &:nth-of-type(1) {
+    padding-block: 1em;
+    @media (max-width: 460px) {
+      padding-block: 0 1em;
+    }
+  }
 }
 
-/* Reset default font style of address element */
 address {
+  /* Reset default font style of address element */
   font-style: normal;
+  @media (max-width: 768px) {
+    text-align: start;
+  }
 }
 
 /* Scrollbar Styles */
@@ -98,17 +136,48 @@ address {
   background-color: #38cce3;
 }
 
-/* Hero Section */
+/* Header Section */
 header {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 4em;
+  padding-block: 1em 0;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1em;
+    padding-block: 2em 1em;
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+  @media (max-width: 420px) {
+    padding-bottom: 0;
+  }
 }
 
 .user-name {
   font-size: 3rem;
-  line-height: 1em;
+  line-height: 0.25em;
+  @media (max-width: 768px) {
+    font-size: 2.125rem;
+    line-height: 1em;
+    text-align: start;
+  }
+  @media (max-width: 640px) {
+    font-size: 1.75rem;
+    line-height: 1em;
+    text-align: center;
+  }
+  @media (max-width: 360px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 300px) {
+    font-size: 1.25rem;
+  }
 }
 
 .profile-pic {
@@ -118,47 +187,73 @@ header {
   border-radius: 50%;
   box-shadow: 0 1px 1px #2b3031, 0 2px 2px #2b3031, 0 4px 4px #2b3031,
     0 8px 8px #2b3031, 0 16px 16px #2b3031;
+  @media (max-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.bio,
+.email {
+  @media (max-width: 400px) {
+    font-size: 0.85em;
+  }
 }
 
 .email {
   color: var(--mainTextColor);
-}
-
-.socials--list {
-  display: flex;
-  row-gap: 1em;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  & > a::before {
+    content: "\2709  ";
+  }
+  /* Media query nested last due to pseudo-selector usage  */
+  @media (max-width: 300px) {
+    & > a::before {
+      content: none;
+    }
+  }
 }
 
 /* Social Links */
-.socials--list a {
-  font-weight: 300;
-  color: var(--secondaryTextColor);
-  font-size: 0.9em;
-  transition: 0.3s;
-}
-
-.socials--list a:hover {
-  font-weight: 300;
-  color: var(--mainLinkColor);
-  font-size: 0.9em;
+.socials--list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  @media (max-width: 460px) {
+    display: flex;
+    flex-direction: column;
+  }
+  & > a {
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+    &:hover {
+      font-weight: 300;
+      color: var(--mainLinkColor);
+      font-size: 0.9em;
+    }
+  }
 }
 
 /* Qualifications Section */
 .qualifications--list {
   padding-left: 3rem;
-}
-
-.qualifications--list li {
-  padding-left: 0.5rem;
-}
-
-.qualifications--list li::marker {
-  content: "\2714 ";
-  color: #1ebed6;
-  font-size: 1.2em;
-  padding-right: 0.5rem;
+  @media (max-width: 400px) {
+    padding: 1rem;
+  }
+  @media (max-width: 300px) {
+    padding: 0 0 0 1rem;
+  }
+  & > li {
+    padding: 0 0 0.5rem 0.5rem;
+    &::marker {
+      content: "\2714 ";
+      color: #1ebed6;
+      font-size: 1.2em;
+      padding-right: 0.5rem;
+    }
+  }
 }
 
 /* Tech Stack Section */
@@ -167,13 +262,12 @@ header {
   flex-wrap: wrap;
   gap: 1em;
   font-size: 0.9em;
-}
-
-.card--techstack {
-  border: 1px solid var(--mainBorderColor);
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  align-items: center;
+  & > .card--techstack {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+  }
 }
 
 /* Project Card Styles */
@@ -181,15 +275,13 @@ header {
   padding-top: 1em;
   padding-bottom: 1em;
   border-top: 1px solid var(--mainBorderColor);
-}
-
-.card--project a {
-  color: var(--mainTextColor);
-  transition: 0.3s;
-}
-
-.card--project a:hover {
-  color: rgb(30, 190, 214);
+  & > a {
+    color: var(--mainTextColor);
+    transition: 0.3s;
+    &:hover {
+      color: rgb(30, 190, 214);
+    }
+  }
 }
 
 /* Work History Section */
@@ -198,103 +290,31 @@ header {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
+  @media (max-width: 768px) {
+    margin-top: 1em;
+    border-left: none;
+    padding-left: 0;
+  }
+  & > ul {
+    @media (max-width: 460px) {
+      padding-left: 1rem;
+    }
+  }
 }
 
 /* Footer Section */
 footer {
   text-align: center;
   border-top: 2px solid var(--secondaryTextColor);
-}
-
-.copyright {
-  font-size: small;
+  & > p {
+    @media (max-width: 300px) {
+      font-size: 0.95em;
+    }
+  }
 }
 
 /* Line Break Styles */
 .line-break {
   background-color: var(--mainBorderColor);
   height: 1px;
-}
-
-/* Media Query for Medium Screens */
-@media (max-width: 768px) {
-  body {
-    width: 80dvw;
-  }
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 1em;
-    padding-top: 2em;
-    padding-bottom: 1em;
-  }
-
-  .profile-pic {
-    width: 10rem;
-    height: 10rem;
-    filter: drop-shadow();
-  }
-
-  .user-name {
-    font-size: 2.125rem;
-    line-height: 1em;
-    text-align: start;
-  }
-
-  .bio {
-    text-align: justify;
-  }
-
-  address {
-    text-align: start;
-  }
-
-  section {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-
-  .card--work-history {
-    border-left: none;
-    padding-left: 0;
-  }
-}
-
-/* Media Query for Small Screens */
-@media (max-width: 640px) {
-  header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .user-name {
-    font-size: 2rem;
-    line-height: 1em;
-    text-align: center;
-  }
-}
-
-/* Media Query for Extra Small Screens */
-@media (max-width: 360px) {
-  .user-name {
-    font-size: 1.5rem;
-  }
-
-  .socials--list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  h2 {
-    font-size: 1.125rem;
-  }
-
-  .qualifications--list {
-    padding-left: 1rem;
-  }
 }
