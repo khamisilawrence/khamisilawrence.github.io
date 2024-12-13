@@ -3,17 +3,19 @@
 
 /* Root Variables */
 :root {
-  --mainTextColor-dark: #fff;
-  --secondaryTextColor-dark: #adb0b1;
-  --mainLinkColor-dark: rgb(30, 190, 214);
-  --mainBorderColor-dark: #2b3031;
-  --mainBgColor-dark: #131415;
+  --mainTextColor: #fff;
+  --secondaryTextColor: #adb0b1;
+  --mainLinkColor: rgb(30, 190, 214);
+  --mainBorderColor: #2b3031;
+  --mainBgColor: #131415;
 
-  --mainTextColor: var(--mainTextColor-dark);
-  --secondaryTextColor: var(--secondaryTextColor-dark);
-  --mainLinkColor: var(--mainLinkColor-dark);
-  --mainBorderColor: var(--mainBorderColor-dark);
-  --mainBgColor: var(--mainBgColor-dark);
+  --color-scrollbar-thumb: #1ebed6;
+  --color-scrollbar-track: #464f51;
+  --color-shadow: #2b3031;
+
+  --shadow-profile-pic: 0 1px 1px var(--color-shadow),
+    0 2px 2px var(--color-shadow), 0 4px 4px var(--color-shadow),
+    0 8px 8px var(--color-shadow), 0 16px 16px var(--color-shadow);
 }
 
 /* Global Styles */
@@ -101,7 +103,7 @@ address {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #1ebed6 #464f51;
+  scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
 }
 
 /* Chrome, Edge and Safari */
@@ -109,10 +111,11 @@ address {
   height: 10px;
   width: 10px;
 }
+
 *::-webkit-scrollbar-track {
   border-radius: 5px;
-  background-color: #464f51;
-  border: 1px solid #131415;
+  border: 1px solid var(--mainBgColor-dark);
+  background-color: var(--color-scrollbar-track);
 }
 
 *::-webkit-scrollbar-track:hover {
@@ -125,7 +128,7 @@ address {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 6px;
-  background-color: #1ebed6;
+  background-color: var(--color-scrollbar-thumb);
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -185,8 +188,7 @@ header {
   height: 9.375rem;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 1px 1px #2b3031, 0 2px 2px #2b3031, 0 4px 4px #2b3031,
-    0 8px 8px #2b3031, 0 16px 16px #2b3031;
+  box-shadow: var(--shadow-profile-pic);
   @media (max-width: 768px) {
     width: 10rem;
     height: 10rem;
