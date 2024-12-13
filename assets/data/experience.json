@@ -1,0 +1,46 @@
+[
+  {
+    "position": "FULL-STACK REACT & NEXT.JS ENGINEER",
+    "company": "RED VENTURES",
+    "startDate": "2024-02",
+    "endDate": "2024-09",
+    "responsibilities": [
+      "Developed and implemented a native Full Address Capture interface within a large-scale web application, enhancing user engagement and data capture efficiency.",
+      "Spearheaded the migration of legacy code to React and Next.js, resulting in a 30% reduction in page load times.",
+      "Integrated third-party APIs for address verification and geolocation, significantly improving the accuracy of address capture by 45%."
+    ]
+  },
+  {
+    "position": "REACT DEVELOPER",
+    "company": "GENR8-3D",
+    "startDate": "2023-04",
+    "endDate": "2024-02",
+    "responsibilities": [
+      "Migrated the codebase of a commercial web application from Vue to React.",
+      "Increased application performance by 11% through cohesive integration of React components with Node.js and Next.js.",
+      "Utilized Google's Lighthouse to identify and implement optimizations, resulting in 17% faster page load times."
+    ]
+  },
+  {
+    "position": "FRONTEND WEB DEVELOPER",
+    "company": "TELEM",
+    "startDate": "2021-08",
+    "endDate": "2023-03",
+    "responsibilities": [
+      "Delivered 2 innovative features ahead of schedule, surpassing quarterly goals by 8%.",
+      "Boosted user experience by resolving front-end issues with a 98% success rate.",
+      "Collaborated with cross-functional teams to implement 3 new front-end features, leading to a 25% increase in user engagement."
+    ]
+  },
+  {
+    "position": "FRONTEND DEVELOPER",
+    "company": "GENR8 STUDIOS",
+    "startDate": "2018-08",
+    "endDate": "2021-07",
+    "responsibilities": [
+      "Increased user engagement by reducing page load time by 20%.",
+      "Improved website visitor retention by 30% by introducing cutting-edge design trends.",
+      "Streamlined user experience by resolving front-end bugs, resulting in a 40% decrease in reported issues."
+    ]
+  }
+]

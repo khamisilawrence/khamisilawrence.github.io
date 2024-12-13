@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Caesar Cipher Converter",
+    "description": "A web application that enables users to encrypt and decrypt text quickly using the Caesar Cipher method.",
+    "features": [
+      "Internationalization: enabling users to select their preferred language for text processing.",
+      "Theme Toggle: enabling users to switch between light and dark themes with a single button.",
+      "Accurate Decryption: providing users with accurate decryption by leveraging a dictionary-based algorithm."
+    ],
+    "techStack": [
+      "Astro",
+      "TypeScript",
+      "TailwindCSS"
+    ],
+    "link": "https://caesarsays.netlify.app/"
+  },
+  {
+    "title": "Geospatial Country Information API",
+    "description": "RESTful API that provides geospatial and demographic data about countries passed via query.",
+    "features": [
+      "Users can query information such as population, area size, languages, timezone, currency, and the national flag by providing a country's name."
+    ],
+    "techStack": [
+      "Go",
+      "Echo",
+      "Ristretto",
+      "Swagger"
+    ],
+    "link": "https://github.com/khamisilawrence/golang-geo-info-api"
+  },
+  {
+    "title": "Binary-to-String Converter",
+    "description": "A simplistic utility web tool to simplify the process of converting binary data to text and vice versa.",
+    "features": [
+      "Tailored for those who work with binary data and need a quick, efficient way to encode or decode binary strings."
+    ],
+    "techStack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS"
+    ],
+    "link": "https://binary-string-converter.vercel.app/"
+  }
+]
