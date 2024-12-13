@@ -263,16 +263,25 @@ header {
   gap: 1em;
   font-size: 0.9em;
   padding-bottom: 2rem;
-  & > .card--techstack {
-    border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    align-items: center;
-    & > span.card--heading {
-      font-weight: bold;
-      font-size: 1rem;
-    }
-  }
+}
+
+.card--techstack {
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
+}
+
+.card--projects {
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 5px;
+  padding: 1em;
+  align-items: center;
+}
+
+span.card--heading {
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Project Card Styles */
