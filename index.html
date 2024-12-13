@@ -65,255 +65,32 @@
       <div class="line-break"></div>
 
       <section id="stack">
-
         <h2>Tech Stack</h2>
-
-        <div class="wrapper--techstack__items">
-          <div class="card--techstack"><span>
-              JavaScript, TypeScript, Python, Go
-            </span></div>
-          <div class="card--techstack"><span>
-              React, NextJS, TailwindCSS, Jest
-            </span></div>
-          <div class="card--techstack"><span>
-              NodeJS, Express, NestJS, Deno
-            </span></div>
-          <div class="card--techstack"><span>MongoDB, MySQL, PostgreSQL, Redis</span></div>
-          <!-- <div class="card--techstack"><span>
-            Electron, React Native, Expo
-          </span></div> -->
-        </div>
-
+        <div id="techStackContainer" class="wrapper--techstack__items"></div>
       </section>
 
       <div class="line-break"></div>
       <div class="line-break"></div>
 
-      <section id="experience" class="work-history-wrapper">
-
+      <section id="experience">
         <h2>Professional Experience</h2>
-
-        <div class="line-break"></div>
-
-        <div class="card--work-history">
-          <strong>FULL-STACK REACT & NEXT.JS ENGINEER | RED VENTURES</strong>
-          <p>
-            <time datetime="2024-02">02/2024</time>
-            <span> - <span>
-                <time datetime="2024-09">09/2024</time>
-          </p>
-          <p>Developed and implemented a native Full Address Capture interface within a large-scale web application,
-            enhancing
-            user
-            engagement and data capture efficiency.</p>
-          <ul>
-            <li>
-              <p>
-                Spearheaded the migration of legacy code to React and Next.js, resulting in a 30% reduction in page load
-                times. Implemented server-side rendering (SSR) and static site generation (SSG) in Next.js, improving
-                SEO
-                performance by 25%,
-                driving organic traffic growth
-              </p>
-            </li>
-            <li>
-              <p>
-                Integrated third-party APIs for address verification and geolocation, significantly improving the
-                accuracy of address
-                capture by 45% in the Full Address Capture project.
-              </p>
-            </li>
-            <li>
-              <p>
-                Worked closely with product owners and stakeholders to gather requirements, ensuring project milestones
-                were met on time
-                and within budget, leading to a 95% success rate in project delivery.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="line-break"></div>
-
-        <div class="card--work-history">
-          <strong>REACT DEVELOPER | GENR8-3D</strong>
-          <p>
-            <time datetime="2023-04">04/2023</time>
-            <span> - <span>
-                <time datetime="2024-02">02/2024</time>
-          </p>
-          <p>Migrated the codebase of a commercial web application from Vue to React.</p>
-          <ul>
-            <li>
-              <p>
-                Increased application performance by 11% through cohesive integration of React components with Node.js
-                and
-                Next.js, validated by React Developer Tools to deliver an enhanced experience for end-users.
-              </p>
-            </li>
-            <li>
-              <p>
-                Utilized Google's Lighthouse to identify and implement optimizations, resulting in 17% faster page load
-                times and improved site efficiency.
-              </p>
-            </li>
-            <li>
-              <p>
-                Successfully improved project delivery timelines by 9% through the implementation of streamlined
-                workflows, enhancing team productivity and timely project completion.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="line-break"></div>
-
-        <div class="card--work-history">
-          <strong>FRONTEND WEB DEVELOPER | TELEM</strong>
-          <p>
-            <time datetime="2021-08">08/2021</time>
-            <span> - <span>
-                <time datetime="2023-03">03/2023</time>
-          </p>
-          <p>Worked on the UI of Telem's dashboard that connects to smart appliances and displays sortable information
-            in
-            real-time.
-          </p>
-          <ul>
-            <li>
-              <p>
-                Delivered 2 innovative features ahead of schedule, surpassing quarterly goals by 8%, resulting in
-                enhanced
-                project outcomes and satisfied stakeholders.
-              </p>
-            </li>
-            <li>
-              <p>
-                Boosted user experience by resolving front-end issues with a 98% success rate, ensuring a reliable
-                platform and high customer satisfaction.
-              </p>
-            </li>
-            <li>
-              <p>
-                Collaborated with cross-functional teams to implement 3 new front-end features, leading to a 25%
-                increase
-                in user engagement.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="line-break"></div>
-
-        <div class="card--work-history">
-          <strong>FRONTEND DEVELOPER | GENR8 STUDIOS</strong>
-          <p>
-            <time datetime="2018-08">08/2018</time>
-            <span> - <span>
-                <time datetime="2021-07">07/2021</time>
-          </p>
-          <p>Developed a previous iteration of the official website for GENR8 Studios as a member of a cross-functional
-            team.</p>
-          <ul>
-            <li>
-              <p>
-                Increased user engagement by reducing page load time by 20%, validated by Google's Lighthouse, through
-                meticulous code optimization.
-              </p>
-            </li>
-            <li>
-              <p>
-                Improved website visitor retention by 30%, as measured by Google Analytics, by introducing cutting-edge
-                design trends that enhanced the visual experience and made the platform more engaging.
-              </p>
-            </li>
-            <li>
-              <p>
-                Streamlined user experience by resolving front-end bugs, resulting in a 40% decrease in reported issues
-                and increased website stability.
-              </p>
-            </li>
-          </ul>
-        </div>
-
+        <div id="experienceContainer"></div>
       </section>
 
       <div class="line-break"></div>
       <div class="line-break"></div>
 
       <section id="projects">
-
         <h2>Projects</h2>
+        <div id="projectsContainer" class="wrapper--techstack__items"></div>
+      </section>
 
-        <div class="wrapper--techstack__items">
+      <div class="line-break"></div>
+      <div class="line-break"></div>
 
-          <div class="card--techstack">
-            <span class="card--heading">
-              Caesar Cipher Converter
-            </span>
-            <p>
-              A web application that enables users to encrypt and decrypt text quickly using the Caesar Cipher method.
-              This tool supports:
-            </p>
-
-            <ul>
-              <li>Internationalization: enabling users to select their preferred language for text processing
-              </li>
-              <li>Theme Toggle: enabling users to switch between light and dark themes with a single button</li>
-              <li>Accurate Decryption: providing users with accurate decryption by leveraging a dictionary-based
-                algorithm</li>
-            </ul>
-
-            <p>Built using Astro, TypeScript, and TailwindCSS.</p>
-
-            <a href="https://caesarsays.netlify.app/" rel="noopener" target="_blank">View
-              Project</a>
-          </div>
-
-          <div class="card--techstack">
-            <span class="card--heading">
-              Geospacial Country Information API
-            </span>
-            <p>
-              RESTful API that provides geospatial and demographic data about countries passed via query.
-            </p>
-
-            <p>
-              Users can query information such as population, area size, languages, timezone, currency, and the
-              national
-              flag by
-              providing a country's name.</p>
-
-            <p>Built using Go, Echo, Ristretto, and Swagger.</p>
-
-            <a href="https://github.com/khamisilawrence/golang-geo-info-api" rel="noopener" target="_blank">View
-              Project</a>
-          </div>
-
-          <div class="card--techstack">
-
-            <span class="card--heading">
-              Binary-to-Sring Converter
-            </span>
-
-            <p>
-              A simplistic utility web tool to simplify the process of converting binary data to text and vice versa.
-            </p>
-
-            <p>
-              Tailored for those who work with binary data and need a quick, efficient way to encode or decode binary
-              strings.
-            </p>
-
-            <p>
-              Built with Next.js, React, TypeScript, and TailwindCSS.
-            </p>
-
-            <a href="https://binary-string-converter.vercel.app/" rel="noopener" target="_blank">View Project</a>
-          </div>
-
-        </div>
-
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <div id="certificationsContainer" class="wrapper--techstack__items"></div>
       </section>
 
     </main>
@@ -330,6 +107,8 @@
       </p>
 
     </footer>
+
+    <script defer src="scripts/main.js"></script>
 
   </body>
 
