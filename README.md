@@ -1,7 +1,7 @@
 # [Resume Website of Khamisi Lawrence](https://khamisilawrence.github.io/)
 
 <a rel="noopener" href="https://khamisilawrence.github.io/">
-  <img width="1280" alt="screenshot-of-khamisi-lawrence-resume-website" src="https://github.com/khamisilawrence/khamisilawrence.github.io/assets/130081031/3a6c5567-c95a-4a1c-b93c-ab3fca08a104">
+  <img width="1280" alt="screenshot-of-khamisi-lawrence-resume-website" src="https://github.com/user-attachments/assets/de431438-0429-41f9-9d12-de56005d1926">
 </a>
 
 
