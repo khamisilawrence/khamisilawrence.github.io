@@ -1,15 +1,132 @@
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+/* ===============================
+   Reset CSS for Cross-Browser Consistency
+   =============================== */
 
-/* Root Variables */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--mainBgColor);
+  max-width: 43.75rem;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+footer {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+address {
+  display: block;
+  font-style: normal; /* Reset default font style of address element */
+  unicode-bidi: isolate;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ===============================
+   Top-Level Documentation for Digital Resume Website
+   =============================== */
+/*
+  ===================================================
+  CSS for Digital Resume Website
+  ===================================================
+  - Font: Readex Pro (Google Fonts)
+  - External Libraries: Bootstrap, TailwindCSS
+  - Sections: Global Styles, Layouts, Components, Media Queries
+  ===================================================
+*/
+
+/* ==========================
+   Root Variables (Color Palette)
+   ========================== */
 :root {
-  --mainTextColor: #fff;
+  color-scheme: dark light;
+  --mainTextColor: #131415;
   --secondaryTextColor: #adb0b1;
   --mainLinkColor: rgb(30, 190, 214);
   --mainBorderColor: #2b3031;
-  --mainBgColor: #131415;
+  --mainBgColor: #fff;
 
   --color-scrollbar-thumb: #1ebed6;
+  --color-scrollbar-thumb-alt: #38cce3;
   --color-scrollbar-track: #464f51;
   --color-shadow: #2b3031;
 
@@ -18,7 +135,28 @@
     0 8px 8px var(--color-shadow), 0 16px 16px var(--color-shadow);
 }
 
-/* Global Styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mainTextColor: #fff;
+    --secondaryTextColor: #adb0b1;
+    --mainLinkColor: rgb(30, 190, 214);
+    --mainBorderColor: #2b3031;
+    --mainBgColor: #131415;
+  }
+  ::selection {
+    background-color: var(--mainLinkColor);
+    color: var(--mainBgColor);
+  }
+}
+
+::selection {
+  background-color: var(--mainBgColor);
+  color: var(--mainTextColor);
+}
+
+/* ==========================
+   Global Styles (Universal Styling)
+   ========================== */
 * {
   font-family: "Readex Pro";
   line-height: 1.5em;
@@ -31,29 +169,35 @@ body {
   max-width: 43.75rem;
   margin: 0 auto;
   padding: 1em;
-  @media (max-width: 768px) {
-    width: 80dvw;
-  }
 }
 
-h2 {
-  @media (max-width: 400px) {
-    font-size: 1.375em;
-  }
-  @media (max-width: 360px) {
-    font-size: 1.125rem;
-  }
-  @media (max-width: 300px) {
-    font-size: 0.95rem;
-  }
+/* ==========================
+   Layout (Header, Footer, Sections)
+   ========================== */
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4em;
+  padding-block: 1em 0;
 }
 
-strong {
-  @media (max-width: 460px) {
-    font-size: 0.875em;
-  }
+.user-name {
+  font-size: 3rem;
+  line-height: 0.25em;
 }
 
+.profile-pic {
+  width: 9.375rem;
+  height: 9.375rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow-profile-pic);
+}
+
+/* ==========================
+   Text Styles (Headings, Paragraphs, Links)
+   ========================== */
 p,
 span,
 time,
@@ -67,73 +211,57 @@ li {
 }
 
 a {
-  text-decoration: none;
   color: var(--mainLinkColor);
   font-weight: 500;
 }
 
 section {
-  @media (max-width: 300px) {
-    padding-block: 0.5em;
-  }
-  /* Section within header */
-  &:first-of-type {
-    @media (max-width: 420px) {
-      padding-block: 0.5em;
-    }
-  }
   /* Socials Section */
   &:nth-of-type(1) {
     padding-block: 1em;
-    @media (max-width: 460px) {
-      padding-block: 0 1em;
-    }
   }
 }
 
-address {
-  /* Reset default font style of address element */
-  font-style: normal;
-  @media (max-width: 768px) {
-    text-align: start;
-  }
-}
-
+/* Noscript Styles */
 .noscript {
   width: 100%;
   background-color: var(--color-scrollbar-thumb);
   color: var(--mainBgColor);
-  /* border: 1px solid white; */
   position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  & div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-  }
-  & h3 {
-    font-size: larger;
-    color: #131415;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  & p {
-    font-size: xx-small;
-    color: #131415;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0;
-  }
 }
 
-/* Scrollbar Styles */
+.noscript div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.noscript h3 {
+  font-size: larger;
+  color: #131415;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.noscript p {
+  font-size: xx-small;
+  color: #131415;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ==========================
+   Scrollbar Styles
+   ========================== */
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -153,11 +281,11 @@ address {
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: #464f51;
+  background-color: var(--color-scrollbar-track);
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: #464f51;
+  background-color: var(--color-scrollbar-track);
 }
 
 *::-webkit-scrollbar-thumb {
@@ -166,74 +294,11 @@ address {
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #38cce3;
+  background-color: var(--color-scrollbar-thumb-alt);
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #38cce3;
-}
-
-/* Header Section */
-header {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 4em;
-  padding-block: 1em 0;
-  @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 1em;
-    padding-block: 2em 1em;
-  }
-  @media (max-width: 640px) {
-    flex-direction: column;
-  }
-  @media (max-width: 420px) {
-    padding-bottom: 0;
-  }
-}
-
-.user-name {
-  font-size: 3rem;
-  line-height: 0.25em;
-  @media (max-width: 768px) {
-    font-size: 2.125rem;
-    line-height: 1em;
-    text-align: start;
-  }
-  @media (max-width: 640px) {
-    font-size: 1.75rem;
-    line-height: 1em;
-    text-align: center;
-  }
-  @media (max-width: 360px) {
-    font-size: 1.5rem;
-  }
-  @media (max-width: 300px) {
-    font-size: 1.25rem;
-  }
-}
-
-.profile-pic {
-  width: 9.375rem;
-  height: 9.375rem;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: var(--shadow-profile-pic);
-  @media (max-width: 768px) {
-    width: 10rem;
-    height: 10rem;
-  }
-}
-
-.bio,
-.email {
-  @media (max-width: 400px) {
-    font-size: 0.85em;
-  }
+  background-color: var(--color-scrollbar-thumb-alt);
 }
 
 .email {
@@ -241,13 +306,17 @@ header {
   & > a::before {
     content: "\2709  ";
   }
-  /* Media query nested last due to pseudo-selector usage  */
-  @media (max-width: 300px) {
+  /* Media query nested here due to pseudo-selector usage  */
+  /* @media (max-width: 300px) {
     & > a::before {
       content: none;
     }
-  }
+  } */
 }
+
+/* ==========================
+   Socials, Qualifications, and Tech Stack Sections
+   ========================== */
 
 /* Social Links */
 .socials--list {
@@ -255,41 +324,35 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   row-gap: 1em;
-  @media (max-width: 460px) {
-    display: flex;
-    flex-direction: column;
-  }
-  & > a {
-    font-weight: 300;
-    color: var(--secondaryTextColor);
-    font-size: 0.9em;
-    transition: 0.3s;
-    &:hover {
-      font-weight: 300;
-      color: var(--mainLinkColor);
-      font-size: 0.9em;
-    }
-  }
+}
+
+.socials--list > a {
+  font-weight: 300;
+  color: var(--secondaryTextColor);
+  font-size: 0.9em;
+  transition: 0.3s;
+}
+
+.socials--list > a:hover {
+  font-weight: 300;
+  color: var(--mainLinkColor);
+  font-size: 0.9em;
 }
 
 /* Qualifications Section */
 .qualifications--list {
   padding-left: 3rem;
-  @media (max-width: 400px) {
-    padding: 1rem;
-  }
-  @media (max-width: 300px) {
-    padding: 0 0 0 1rem;
-  }
-  & > li {
-    padding: 0 0 0.5rem 0.5rem;
-    &::marker {
-      content: "\2714 ";
-      color: #1ebed6;
-      font-size: 1.2em;
-      padding-right: 0.5rem;
-    }
-  }
+}
+
+.qualifications--list > li {
+  padding: 0 0 0.5rem 0.5rem;
+}
+
+.qualifications--list > li::marker {
+  content: "\2714 ";
+  color: #1ebed6;
+  font-size: 1.2em;
+  padding-right: 0.5rem;
 }
 
 /* Tech Stack Section */
@@ -301,13 +364,7 @@ header {
   padding-bottom: 2rem;
 }
 
-.card--techstack {
-  border: 1px solid var(--mainBorderColor);
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  align-items: center;
-}
-
+.card--techstack,
 .card--projects {
   border: 1px solid var(--mainBorderColor);
   border-radius: 5px;
@@ -325,14 +382,20 @@ span.card--heading {
   padding-top: 1em;
   padding-bottom: 1em;
   border-top: 1px solid var(--mainBorderColor);
-  & > a {
-    color: var(--mainTextColor);
-    transition: 0.3s;
-    &:hover {
-      color: rgb(30, 190, 214);
-    }
-  }
 }
+
+.card--project > a {
+  color: var(--mainTextColor);
+  transition: 0.3s;
+}
+
+.card--project > a:hover {
+  color: rgb(30, 190, 214);
+}
+
+/* ==========================
+   Work History Section
+   ========================== */
 
 /* Work History Section */
 .card--work-history {
@@ -340,31 +403,164 @@ span.card--heading {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
-  @media (max-width: 768px) {
-    margin-top: 1em;
-    border-left: none;
-    padding-left: 0;
-  }
-  & > ul {
-    @media (max-width: 460px) {
-      padding-left: 1rem;
-    }
-  }
 }
+
+/* ==========================
+   Footer Section
+   ========================== */
 
 /* Footer Section */
 footer {
   text-align: center;
   border-top: 2px solid var(--secondaryTextColor);
-  & > p {
-    @media (max-width: 300px) {
-      font-size: 0.95em;
-    }
-  }
 }
+
+/* ==========================
+   Line Breaks (Used in Various Sections)
+   ========================== */
 
 /* Line Break Styles */
 .line-break {
   background-color: var(--mainBorderColor);
   height: 1px;
+}
+
+/* ==========================
+   Media Queries for Responsiveness
+   ========================== */
+
+/* Devices smaller than 768px */
+@media (max-width: 768px) {
+  header {
+    gap: 1em;
+    justify-content: space-around;
+    padding-block: 2em 1em;
+  }
+
+  body {
+    width: 80dvw;
+  }
+
+  address {
+    text-align: start;
+  }
+
+  .user-name {
+    font-size: 2.125rem;
+    line-height: 1em;
+    text-align: start;
+  }
+
+  .profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .card--work-history {
+    margin-top: 1em;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+/* Devices smaller than 640px */
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+  }
+
+  .user-name {
+    font-size: 1.75rem;
+    line-height: 1em;
+    text-align: center;
+  }
+
+  /* .profile-pic {
+    width: 10rem;
+    height: 10rem;
+  } */
+}
+
+/* Devices smaller than 460px */
+@media (max-width: 460px) {
+  section:nth-of-type(1) {
+    padding-block: 0 1em;
+  }
+
+  strong {
+    font-size: 0.875em;
+  }
+
+  .socials--list {
+    flex-direction: column;
+  }
+
+  .card--work-history > ul {
+    padding-left: 1rem;
+  }
+}
+
+/* Devices smaller than 420px */
+@media (max-width: 420px) {
+  header {
+    padding-bottom: 0;
+  }
+
+  section:first-of-type {
+    padding-block: 0.5em;
+  }
+}
+
+/* Devices smaller than 400px */
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.375em;
+  }
+
+  .bio,
+  .email {
+    font-size: 0.85em;
+  }
+
+  .qualifications--list {
+    padding: 1rem;
+  }
+}
+
+/* Devices smaller than 360px */
+@media (max-width: 360px) {
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  .user-name {
+    font-size: 1.5rem;
+  }
+}
+
+/* Devices smaller than 300px */
+@media (max-width: 300px) {
+  h2 {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding-block: 0.5em;
+  }
+
+  footer > p {
+    font-size: 0.95em;
+  }
+
+  .user-name {
+    font-size: 1.25rem;
+  }
+
+  .email > a::before {
+    content: none;
+  }
+
+  .qualifications--list {
+    padding: 0 0 0 1rem;
+  }
 }
