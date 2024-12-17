@@ -18,6 +18,16 @@ const MIN_MONTH = 1; // Minimum valid month
 const MAX_MONTH = 12; // Maximum valid month
 const BASE = 10; // Base for number parsing (decimal)
 
+const ORIGIN_YEAR = 2018;
+const CURRENT_YEAR = new Date().getFullYear();
+
+function calcYearsOfExperience() {
+  const yearsExperience = "yearsExperience";
+  const experience = document?.getElementById(yearsExperience);
+  const currentYearsOfExperience = CURRENT_YEAR - ORIGIN_YEAR;
+  experience.textContent = currentYearsOfExperience;
+}
+
 function isValidDateFormat(dateString) {
   const regex = /^\d{4}-\d{2}$/; // Matches YYYY-MM format
   return regex.test(dateString);
@@ -149,6 +159,8 @@ function renderCertifications(data, containerId) {
     container.appendChild(card);
   });
 }
+
+calcYearsOfExperience();
 
 // Main function to fetch and render all sections
 async function renderAllSections() {
