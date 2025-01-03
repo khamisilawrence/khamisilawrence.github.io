@@ -2,16 +2,18 @@
    Reset CSS for Cross-Browser Consistency
    =============================== */
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif; /* Fallback font */
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--mainBgColor);
-  max-width: 43.75rem;
-  margin: 0 auto;
-  padding: 1em;
 }
 
 header {
@@ -87,7 +89,14 @@ strong {
 }
 
 ul {
+  display: block;
   list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
 }
 
 li {
@@ -158,9 +167,7 @@ a:-webkit-any-link {
    Global Styles (Universal Styling)
    ========================== */
 * {
-  font-family: "Readex Pro";
   line-height: 1.5em;
-  box-sizing: border-box;
   color: var(--mainTextColor);
 }
 
@@ -213,6 +220,7 @@ li {
 a {
   color: var(--mainLinkColor);
   font-weight: 500;
+  text-decoration: none;
 }
 
 section {
