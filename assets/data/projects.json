@@ -26,7 +26,7 @@
       "Ristretto",
       "Swagger"
     ],
-    "link": "https://github.com/khamisilawrence/golang-geo-info-api"
+    "link": "https://geo-info-api.onrender.com/swagger/index.html#/country/get_info"
   },
   {
     "title": "Binary-to-String Converter",
