@@ -34,6 +34,10 @@ function isValidDateFormat(dateString) {
 }
 
 function formatDate(dateString) {
+  if (!dateString) {
+    return "PRESENT";
+  }
+
   if (!isValidDateFormat(dateString)) {
     console.error("Invalid date format. Expected 'YYYY-MM'.");
   }
