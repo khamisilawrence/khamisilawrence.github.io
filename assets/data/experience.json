@@ -1,5 +1,16 @@
 [
   {
+    "position": "BACK END ENGINEER",
+    "company": "MAJESTIC ARCADE",
+    "startDate": "2024-10",
+    "endDate": "",
+    "responsibilities": [
+      "Scoped and built a backend system that leverages a microservice architecture, optimizing productivity and providing a 32% reduction in response time.",
+      "Designed and developed API endpoints for a user-friendly interface, resulting in a 15% increase in user engagement.",
+      "Collaborated with cross-functional teams to implement new features, leading to a 25% increase in user retention."
+    ]
+  },
+  {
     "position": "FULL-STACK REACT & NEXT.JS ENGINEER",
     "company": "RED VENTURES",
     "startDate": "2024-02",
