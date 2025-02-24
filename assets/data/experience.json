@@ -3,7 +3,7 @@
     "position": "BACK END ENGINEER",
     "company": "MAJESTIC ARCADE",
     "startDate": "2024-10",
-    "endDate": "",
+    "endDate": "2025-02",
     "responsibilities": [
       "Developed and maintained scalable microservices architecture for multiple backend systems, enabling independent service deployments, improving system reliability, and reducing operational costs by 37% through optimized resource management.",
       "Utilized Go (Golang) to optimize high-concurrency microservices, increasing throughput by 26% while reducing CPU usage during peak traffic periods.",
