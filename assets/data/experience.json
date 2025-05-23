@@ -5,9 +5,8 @@
     "startDate": "2024-10",
     "endDate": "2025-02",
     "responsibilities": [
-      "Developed and maintained scalable microservices architecture for multiple backend systems, enabling independent service deployments, improving system reliability, and reducing operational costs by 37% through optimized resource management.",
-      "Utilized Go (Golang) to optimize high-concurrency microservices, increasing throughput by 26% while reducing CPU usage during peak traffic periods.",
-      "Designed and implemented RESTful APIs using Node.js, Express.js, and NestJS, enhancing communication between frontend and backend services and reducing integration issues.",
+      "Developed and maintained a scalable microservices architecture using Go (Golang), increasing throughput by 26% and reduce CPU usage.",
+      "Migrated existing RESTful APIs from Express.js to NestJS, improving code structure and maintainability,while enhancing communication between frontend and backend services.",
       "Leveraged AWS services (EC2, Lambda, S3, RDS) to optimize cloud infrastructure, reducing hosting costs by 33% while ensuring high availability and scalability for critical applications."
     ]
   },
