@@ -1,14 +1,14 @@
 [
   {
-    "title": "JavaScript, TypeScript, Python, Go"
+    "title": "TypeScript, React, TailwindCSS"
   },
   {
-    "title": "React, NextJS, TailwindCSS, Jest"
+    "title": "NodeJS, ExpressJS, NestJS"
   },
   {
-    "title": "NodeJS, Express, NestJS, Deno"
+    "title": "Python, Django, Flask"
   },
   {
-    "title": "MongoDB, MySQL, PostgreSQL, Redis"
+    "title": "MongoDB, SQL, Redis"
   }
 ]

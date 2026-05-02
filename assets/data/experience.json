@@ -1,5 +1,15 @@
 [
   {
+    "position": "FRONT END ENGINEER",
+    "company": "TRAFFIX",
+    "startDate": "2025-02",
+    "endDate": "2026-02",
+    "responsibilities": [
+      "Designed and optimized a logistics dashboard using React, TanStack Query, and React Context, enabling sales teams to track carriers, trucks, and real-time load statuses while reducing API data loading times by 40% and significantly improving code quality and scalability.",
+      "Played a pivotal role in shifting company strategy by transforming the dashboard into the core revenue-generating tool, aligning operations with new cross-border trade demands amid evolving U.S.-Canada tariff regulations."
+    ]
+  },
+  {
     "position": "BACK END ENGINEER",
     "company": "MAJESTIC ARCADE",
     "startDate": "2024-10",
