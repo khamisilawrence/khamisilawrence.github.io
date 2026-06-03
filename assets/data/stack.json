@@ -1,9 +1,15 @@
 [
   {
-    "title": "TypeScript, React, TailwindCSS"
+    "title": "TypeScript, JavaScript"
   },
   {
-    "title": "NodeJS, ExpressJS, NestJS"
+    "title": "React, Astro, NextJS"
+  },
+  {
+    "title": "TailwindCSS, Styled Components"
+  },
+  {
+    "title": "Go, NodeJS, Express"
   },
   {
     "title": "Python, Django, Flask"
