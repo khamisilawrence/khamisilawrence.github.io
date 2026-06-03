@@ -1,5 +1,27 @@
 [
   {
+    "position": "WEB OPERATIONS ENGINEER",
+    "company": "CONFIDENTIAL CLIENT",
+    "startDate": "2026-05",
+    "endDate": "2026-06",
+    "responsibilities": [
+      "Architected and deployed a strict DMARC policy, SPF, and DKIM authentication framework using Cloudflare DNS and EasyDMARC, eliminating domain spoofing vulnerabilities and preventing phishing attacks.",
+      "Resolved complex DNS conflicts involving CNAME delegation and duplicate TXT records to ensure 100% protocol compliance, securing the domain against PermError failures that cause email blacklisting.",
+      "Enhanced email deliverability to meet 2026 Google bulk-sender requirements, ensuring critical business communications reliably reach inboxes while gaining visibility into unauthorized sending sources via aggregate reporting."
+    ]
+  },
+  {
+    "position": "WEB DEVELOPMENT SPECIALIST",
+    "company": "FREELANCE",
+    "startDate": "2026-03",
+    "endDate": "2026-04",
+    "responsibilities": [
+      "Built a complete portfolio and commission website from scratch for a client — using Astro, Tailwind CSS, and TypeScript as sole developer from concept brief to Netlify deployment in one month.",
+      "Engineered a real-time commission estimate calculator within a static Astro build, managing multi-service selection, variable add-on quantities, and rush fee surcharge logic with no reactive framework; which required careful DOM state modelling and deliberate UX decisions around surfacing meaningful price estimates.",
+      "Transformed the client's commission workflow by replacing unstructured email exchanges with a structured intake system, resulting in a measurable increase in commission requests and significantly easier workflow management since launch."
+    ]
+  },
+  {
     "position": "FRONT END ENGINEER",
     "company": "TRAFFIX",
     "startDate": "2025-02",
