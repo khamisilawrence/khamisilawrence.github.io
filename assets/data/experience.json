@@ -2,6 +2,17 @@
   {
     "position": "WEB OPERATIONS ENGINEER",
     "company": "CONFIDENTIAL CLIENT",
+    "startDate": "2026-06",
+    "endDate": "2026-07",
+    "responsibilities": [
+      "Architected a zero-cost, invite-only subdomain gateway by integrating NextAuth.js with Vite and React Router, enforcing strict email allowlists via custom serverless callbacks to restrict access to authorized personnel only.",
+      "Engineered a secure multi-repo deployment pipeline on Vercel and Cloudflare, configuring edge Middleware and custom CNAME records to isolate sensitive application data from the public-facing landing page without upgrading to paid tiers.",
+      "Resolved complex cross-environment authentication challenges by adapting Auth.js for non-Next.js frameworks, implementing custom session management in Vercel Serverless Functions to ensure seamless, secure user flows across distinct codebases."
+    ]
+  },
+  {
+    "position": "WEB OPERATIONS ENGINEER",
+    "company": "CONFIDENTIAL CLIENT",
     "startDate": "2026-05",
     "endDate": "2026-06",
     "responsibilities": [
