@@ -82,12 +82,28 @@ function renderTechStack(data, containerId) {
 function renderProfessionalExperience(data, containerId) {
   const container = document.getElementById(containerId);
   data.forEach((item) => {
+    // A note entry (e.g. a short gap explanation) renders as one italic line
+    if (item.note) {
+      const note = document.createElement("p");
+      note.classList.add("experience-note");
+      note.textContent = item.note;
+      container.appendChild(note);
+      return;
+    }
+
     const card = document.createElement("div");
     card.classList.add("card--work-history");
 
     const position = document.createElement("strong");
     position.textContent = `${item.position} | ${item.company}`;
     card.appendChild(position);
+
+    if (item.subtitle) {
+      const subtitle = document.createElement("p");
+      subtitle.classList.add("experience-subtitle");
+      subtitle.textContent = item.subtitle;
+      card.appendChild(subtitle);
+    }
 
     const dates = document.createElement("p");
     dates.innerHTML = `
@@ -113,6 +129,18 @@ function renderProjects(data, containerId) {
   data.forEach((item) => {
     const card = document.createElement("div");
     card.classList.add("card--projects");
+
+    if (item.image) {
+      const image = document.createElement("img");
+      image.src = item.image;
+      image.alt = item.imageAlt || "";
+      image.width = 1280;
+      image.height = 529;
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.classList.add("card--projects__image");
+      card.appendChild(image);
+    }
 
     const title = document.createElement("span");
     title.classList.add("card--heading");
@@ -153,13 +181,18 @@ function renderCertifications(data, containerId) {
     const card = document.createElement("div");
     card.classList.add("card--techstack");
 
-    const link = document.createElement("a");
-    link.href = item.link;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = item.title;
+    // Certifications without a credential URL render as plain text
+    if (item.link) {
+      const link = document.createElement("a");
+      link.href = item.link;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = item.title;
+      card.appendChild(link);
+    } else {
+      card.textContent = item.title;
+    }
 
-    card.appendChild(link);
     container.appendChild(card);
   });
 }

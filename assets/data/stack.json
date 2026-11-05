@@ -1,20 +1,23 @@
 [
   {
-    "title": "TypeScript, JavaScript"
+    "title": "Architecture: Multi-Tenant System Design, Role-Based Access Control, Web Performance Optimization"
   },
   {
-    "title": "React, Astro, NextJS"
+    "title": "Languages: TypeScript, JavaScript, Go"
   },
   {
-    "title": "TailwindCSS, Styled Components"
+    "title": "Frameworks: React, Next.js, TanStack Query, Tailwind CSS"
   },
   {
-    "title": "Go, NodeJS, Express"
+    "title": "Data/Infra: Firebase, Cloud Firestore, Vercel, Cloudflare"
   },
   {
-    "title": "Python, Django, Flask"
+    "title": "Testing: Vitest, Playwright"
   },
   {
-    "title": "MongoDB, SQL, Redis"
+    "title": "DevOps: GitHub Actions, Docker"
+  },
+  {
+    "title": "AI Development Tools: Claude Code, GitHub Copilot"
   }
 ]

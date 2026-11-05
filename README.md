@@ -1,8 +1,16 @@
 # [Resume Website of Khamisi Lawrence](https://khamisilawrence.github.io/)
 
+Portfolio and resume site of Khamisi Lawrence, Senior Software Engineer: selected work, experience, how I work, tech stack and certifications.
+
 <a rel="noopener" href="https://khamisilawrence.github.io/">
-  <img width="1280" alt="screenshot-of-khamisi-lawrence-resume-website" src="https://github.com/user-attachments/assets/de431438-0429-41f9-9d12-de56005d1926">
+  <img width="1280" alt="Screenshot of Khamisi Lawrence's resume website" src="assets/images/site-screenshot.webp">
 </a>
+
+## Editing content
+Page sections are rendered by `scripts/main.js` from the JSON files in `assets/data/`:
+- `experience.json`: roles; an entry with only a `note` field renders as a single italic line.
+- `projects.json`: Selected Work cards; `image` and `imageAlt` are optional.
+- `stack.json` and `certifications.json`: a certification without a `link` renders as plain text.
 
 
 ## Credits

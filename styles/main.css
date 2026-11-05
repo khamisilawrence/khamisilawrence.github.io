@@ -401,6 +401,37 @@ span.card--heading {
   color: rgb(30, 190, 214);
 }
 
+/* Selected Work (case-study cards) */
+.wrapper--projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding-bottom: 2rem;
+}
+
+.wrapper--projects .card--projects {
+  min-width: 0;
+}
+
+.card--projects__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+/* How I Work Section */
+.how-i-work--list > li {
+  line-height: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+.how-i-work--list strong {
+  color: var(--mainTextColor);
+}
+
 /* ==========================
    Work History Section
    ========================== */
@@ -411,6 +442,16 @@ span.card--heading {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
+}
+
+.experience-subtitle {
+  font-style: italic;
+  margin-block: 0.25em 0;
+}
+
+.experience-note {
+  font-style: italic;
+  margin-block: 1em;
 }
 
 /* ==========================

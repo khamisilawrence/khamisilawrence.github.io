@@ -1,78 +1,58 @@
 [
   {
-    "position": "WEB OPERATIONS ENGINEER",
-    "company": "CONFIDENTIAL CLIENT",
-    "startDate": "2026-06",
-    "endDate": "2026-07",
-    "responsibilities": [
-      "Architected a zero-cost, invite-only subdomain gateway by integrating NextAuth.js with Vite and React Router, enforcing strict email allowlists via custom serverless callbacks to restrict access to authorized personnel only.",
-      "Engineered a secure multi-repo deployment pipeline on Vercel and Cloudflare, configuring edge Middleware and custom CNAME records to isolate sensitive application data from the public-facing landing page without upgrading to paid tiers.",
-      "Resolved complex cross-environment authentication challenges by adapting Auth.js for non-Next.js frameworks, implementing custom session management in Vercel Serverless Functions to ensure seamless, secure user flows across distinct codebases."
-    ]
-  },
-  {
-    "position": "WEB OPERATIONS ENGINEER",
-    "company": "CONFIDENTIAL CLIENT",
+    "position": "LEAD PRODUCT ENGINEER",
+    "company": "GENR8-3D",
     "startDate": "2026-05",
-    "endDate": "2026-06",
+    "endDate": null,
+    "subtitle": "School Management System: multi-tenant web platform for schools, in live pilot",
     "responsibilities": [
-      "Architected and deployed a strict DMARC policy, SPF, and DKIM authentication framework using Cloudflare DNS and EasyDMARC, eliminating domain spoofing vulnerabilities and preventing phishing attacks.",
-      "Resolved complex DNS conflicts involving CNAME delegation and duplicate TXT records to ensure 100% protocol compliance, securing the domain against PermError failures that cause email blacklisting.",
-      "Enhanced email deliverability to meet 2026 Google bulk-sender requirements, ensuring critical business communications reliably reach inboxes while gaining visibility into unauthorized sending sources via aggregate reporting."
+      "Architected a per-institution multi-tenant data model on Firebase that isolates data across 7 user roles, enforced by about 2,650 lines of Firestore security rules with automated rule tests.",
+      "Took the platform from mock-data prototype to live pilot at 1 school, replacing paper registers and grade spreadsheets; shipped 49 feature PRs in under 6 months (gradebook, PDF report cards, online exams).",
+      "Cut the entry bundle 88% (3.88 MB to 0.46 MB) and first-load JavaScript 75% (4.53 MB to 1.12 MB) with lazy-loaded routes, and added TanStack Query caching to reduce database reads.",
+      "Directed Claude Code agents across 69 merged PRs with written specs and automated guard tests, owning architecture and review; grew the test suite from 3 to 345 files (Vitest, Playwright) in 10 weeks.",
+      "Established releases with semantic versioning (now v2.45.0), a changelog and GitHub Actions release and PR checks; led technical direction with 2 developers before becoming sole owner."
     ]
   },
   {
-    "position": "WEB DEVELOPMENT SPECIALIST",
-    "company": "FREELANCE",
-    "startDate": "2026-03",
-    "endDate": "2026-04",
-    "responsibilities": [
-      "Built a complete portfolio and commission website from scratch for a client — using Astro, Tailwind CSS, and TypeScript as sole developer from concept brief to Netlify deployment in one month.",
-      "Engineered a real-time commission estimate calculator within a static Astro build, managing multi-service selection, variable add-on quantities, and rush fee surcharge logic with no reactive framework; which required careful DOM state modelling and deliberate UX decisions around surfacing meaningful price estimates.",
-      "Transformed the client's commission workflow by replacing unstructured email exchanges with a structured intake system, resulting in a measurable increase in commission requests and significantly easier workflow management since launch."
-    ]
+    "note": "Mar 2026 - Apr 2026: Freelance web development for a private client."
   },
   {
-    "position": "FRONT END ENGINEER",
-    "company": "TRAFFIX",
+    "position": "DEVOPS ENGINEER",
+    "company": "TRAFFIX (contracted via BairesDev)",
     "startDate": "2025-02",
     "endDate": "2026-02",
     "responsibilities": [
-      "Designed and optimized a logistics dashboard using React, TanStack Query, and React Context, enabling sales teams to track carriers, trucks, and real-time load statuses while reducing API data loading times by 40% and significantly improving code quality and scalability.",
-      "Played a pivotal role in shifting company strategy by transforming the dashboard into the core revenue-generating tool, aligning operations with new cross-border trade demands amid evolving U.S.-Canada tariff regulations."
+      "Rewrote, refactored and maintained the GitHub Actions CI/CD workflows shared across the team's multiple repositories.",
+      "Built a logistics dashboard (React, TanStack Query, React Context) for tracking carriers, trucks and live loads; it became the core revenue tool for the company's U.S.-Canada cross-border freight.",
+      "Used GitHub Copilot inline suggestions for workflow and app code, and to draft written records of developer meetings."
     ]
   },
   {
     "position": "BACK END ENGINEER",
-    "company": "MAJESTIC ARCADE",
+    "company": "MAJESTIC ARCADE (contracted via GENR8-3D)",
     "startDate": "2024-10",
     "endDate": "2025-02",
     "responsibilities": [
-      "Developed and maintained a scalable microservices architecture using Go (Golang), increasing throughput by 26% and reduce CPU usage.",
-      "Migrated existing RESTful APIs from Express.js to NestJS, improving code structure and maintainability,while enhancing communication between frontend and backend services.",
-      "Leveraged AWS services (EC2, Lambda, S3, RDS) to optimize cloud infrastructure, reducing hosting costs by 33% while ensuring high availability and scalability for critical applications."
+      "Built and maintained independently deployed Go microservices across the gaming platform's backend systems.",
+      "Wrote the software and API documentation used to onboard new developers to the services."
     ]
   },
   {
-    "position": "FULL-STACK REACT & NEXT.JS ENGINEER",
-    "company": "RED VENTURES",
+    "position": "FULL-STACK ENGINEER",
+    "company": "RED VENTURES (contracted via BairesDev)",
     "startDate": "2024-02",
     "endDate": "2024-09",
     "responsibilities": [
-      "Developed and implemented a native Full Address Capture interface within a large-scale web application, enhancing user engagement and data capture efficiency.",
-      "Spearheaded the migration of legacy code to React and Next.js, resulting in a 30% reduction in page load times.",
-      "Integrated third-party APIs for address verification and geolocation, significantly improving the accuracy of address capture by 45%."
+      "Migrated 2 large-scale address-capture web apps (Charter, USAT) from legacy code to React and Next.js, adding server-side rendering and static site generation."
     ]
   },
   {
-    "position": "REACT DEVELOPER",
+    "position": "FULL-STACK ENGINEER",
     "company": "GENR8-3D",
     "startDate": "2023-04",
     "endDate": "2024-02",
     "responsibilities": [
-      "Migrated the codebase of a commercial web application from Vue to React.",
-      "Increased application performance by 11% through cohesive integration of React components with Node.js and Next.js.",
-      "Utilized Google's Lighthouse to identify and implement optimizations, resulting in 17% faster page load times."
+      "Rebuilt the GENR8-3D company website as main developer in Next.js, React and Tailwind CSS, with a validated contact form."
     ]
   },
   {
@@ -81,9 +61,7 @@
     "startDate": "2021-08",
     "endDate": "2023-03",
     "responsibilities": [
-      "Delivered 2 innovative features ahead of schedule, surpassing quarterly goals by 8%.",
-      "Boosted user experience by resolving front-end issues with a 98% success rate.",
-      "Collaborated with cross-functional teams to implement 3 new front-end features, leading to a 25% increase in user engagement."
+      "Built and maintained front-end features and fixed user-facing issues with a cross-functional product team."
     ]
   },
   {
@@ -92,9 +70,7 @@
     "startDate": "2018-08",
     "endDate": "2021-07",
     "responsibilities": [
-      "Increased user engagement by reducing page load time by 20%.",
-      "Improved website visitor retention by 30% by introducing cutting-edge design trends.",
-      "Streamlined user experience by resolving front-end bugs, resulting in a 40% decrease in reported issues."
+      "Built and maintained the studio's websites, focusing on page performance and front-end stability."
     ]
   }
 ]

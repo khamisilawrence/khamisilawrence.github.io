@@ -1,45 +1,56 @@
 [
   {
-    "title": "Caesar Cipher Converter",
-    "description": "A web application that enables users to encrypt and decrypt text quickly using the Caesar Cipher method.",
+    "title": "School Management System Interactive Demo",
+    "image": "/assets/images/sms-demo.webp",
+    "imageAlt": "Administrator home dashboard of the School Management System demo, showing student, teacher, parent and class totals for a fictional school",
+    "description": "A backend-free, public demo of the multi-tenant school platform I lead, built so schools can try it without seeing anyone's real data.",
     "features": [
-      "Internationalization: enabling users to select their preferred language for text processing.",
-      "Theme Toggle: enabling users to switch between light and dark themes with a single button.",
-      "Accurate Decryption: providing users with accurate decryption by leveraging a dictionary-based algorithm."
+      "Built in 7 days with Claude Code: 4 roles across 5 one-click personas and 30+ pages.",
+      "Fictional data that is wiped on sign-out; nothing is sent to a server.",
+      "34 Playwright specs, including automated accessibility checks."
     ],
     "techStack": [
-      "Astro",
+      "React",
       "TypeScript",
-      "TailwindCSS"
+      "Vite",
+      "Tailwind CSS",
+      "Cloudflare"
     ],
-    "link": "https://caesarsays.netlify.app/"
+    "link": "https://sms-demo.solutions.genr83d.com/"
   },
   {
-    "title": "Geospatial Country Information API",
-    "description": "RESTful API that provides geospatial and demographic data about countries passed via query.",
+    "title": "GENR8 Pipeline Interactive Demo",
+    "image": "/assets/images/pipeline-demo.webp",
+    "imageAlt": "Admin dashboard of the GENR8 Pipeline demo for a fictional manufacturer, showing 81% pipeline completion across 148 work orders",
+    "description": "An operations demo (work orders, materials, maintenance and safety) driven by a deterministic data engine instead of a backend.",
     "features": [
-      "Users can query information such as population, area size, languages, timezone, currency, and the national flag by providing a country's name."
+      "Generates a consistent year of operations for 7 fictional businesses and 3 roles.",
+      "Invariant tests check the generated data for every day of a leap year.",
+      "Shipped in 10 days (33 PRs) with Claude Code, custom ESLint rules and build guards."
+    ],
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Vitest",
+      "Playwright",
+      "Cloudflare Workers"
+    ],
+    "link": "https://pipeline-demo.solutions.genr83d.com/"
+  },
+  {
+    "title": "Geo-Info REST API",
+    "description": "A RESTful API in Go that returns geospatial and demographic data about a country by name.",
+    "features": [
+      "Ristretto in-memory caching and per-client rate limiting.",
+      "Interactive Swagger documentation; deployed as a Docker container."
     ],
     "techStack": [
       "Go",
       "Echo",
       "Ristretto",
-      "Swagger"
+      "Swagger",
+      "Docker"
     ],
     "link": "https://geo-info-api.onrender.com/swagger/index.html#/country/get_info"
-  },
-  {
-    "title": "Binary-to-String Converter",
-    "description": "A simplistic utility web tool to simplify the process of converting binary data to text and vice versa.",
-    "features": [
-      "Tailored for those who work with binary data and need a quick, efficient way to encode or decode binary strings."
-    ],
-    "techStack": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "TailwindCSS"
-    ],
-    "link": "https://binary-string-converter.vercel.app/"
   }
 ]

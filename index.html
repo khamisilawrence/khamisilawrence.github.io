@@ -5,18 +5,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description"
-    content="Khamisi Lawrence is a Software Engineer who specializes in web development and has built over 100 commercial websites and web applications since 2018.">
+    content="Khamisi Lawrence is a Senior Software Engineer with 8 years of web experience and the sole engineering owner of a multi-tenant school management platform taken from prototype to live pilot.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Khamisi Lawrence">
   <meta name="designer" content="Dennis Ivy">
-  <meta name="creator" content="WebDev Khamisi">
+  <meta name="creator" content="Khamisi Lawrence">
   <meta name="keywords"
-    content="Khamisi, WebDev Khamisi, Software Engineer, Software Developer, Web Developer, JavaScript Developer, React Developer, Web Development Specialist, Programmer">
+    content="Khamisi Lawrence, Senior Software Engineer, Full-Stack Engineer, Lead Product Engineer, Multi-Tenant, TypeScript, React, Firebase, Go">
   <!-- Open Graph Metadata -->
-  <meta property="og:title" content="Khamisi Lawrence · Software Engineer Since 2018" />
+  <meta property="og:title" content="Khamisi Lawrence · Senior Software Engineer" />
   <meta property="og:description"
-    content="Khamisi Lawrence is a Software Engineer specializing in web development who has been building and scaling web applications since 2018." />
-  <meta property="og:image" content="https://yourwebsite.com/assets/images/photo-of-khamisi-lawrence.webp" />
+    content="Senior Software Engineer with 8 years of web experience; sole engineering owner of a multi-tenant school management platform taken from prototype to live pilot." />
+  <meta property="og:image" content="https://khamisilawrence.github.io/assets/images/photo-of-khamisi-lawrence.webp" />
+  <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://khamisilawrence.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
@@ -29,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <title>Khamisi Lawrence · Software Engineer Since 2018</title>
+  <title>Khamisi Lawrence · Senior Software Engineer</title>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -50,11 +51,11 @@
 
     <section>
       <h1 class="user-name">Khamisi Lawrence</h1>
-      <p class="bio">Software Engineer specializing in web development.</p>
+      <p class="bio">Senior Software Engineer · multi-tenant web platforms<br>
+        Montego Bay, Jamaica · Remote (Eastern Time)</p>
       <address>
         <p class="email">
-          <a href="mailto:khamisilawrencejm@gmail.com" target="_blank"
-            rel="noopener noreferrer">khamisilawrence.jm@gmail.com</a>
+          <a href="mailto:khamisilawrencejm@gmail.com">khamisilawrencejm@gmail.com</a>
         </p>
       </address>
 
@@ -69,13 +70,12 @@
       <div class="socials--list">
         <!-- <a href="https://khamisilawrence.vercel.app/" target="_blank" rel="noopener"
           aria-label="Visit my personal website">Website</a> -->
-        <a href="https://www.linkedin.com/in/khamisi-lawrence/" target="_blank" rel="noopener"
+        <a href="https://www.linkedin.com/in/khamisi-lawrence-webdev/" target="_blank" rel="noopener"
           aria-label="Visit my LinkedIn profile">LinkedIn</a>
         <a href="https://github.com/khamisilawrence" target="_blank" rel="noopener"
-          aria-label="Visit my Github profile">Github</a>
-        <!-- <a href="/assets/documents/RESUME_KHAMISI_LAWRENCE.pdf" target="_blank" rel="noopener"
-            download="RESUME_KHAMISI_LAWRENCE.pdf" aria-label="Download my Resume">Download
-            Resume</a> -->
+          aria-label="Visit my GitHub profile">GitHub</a>
+        <a href="/assets/documents/RESUME_KHAMISI_LAWRENCE.pdf" target="_blank" rel="noopener"
+          download="RESUME_KHAMISI_LAWRENCE.pdf" aria-label="Download my resume (PDF)">Download Resume</a>
       </div>
 
 
@@ -83,11 +83,14 @@
 
     <section id="qualifications">
 
-      <h2>Skills & Qualifications</h2>
+      <h2>Summary</h2>
       <ul class="qualifications--list">
-        <li>Over <span id="yearsExperience">5</span> years of experience in building and scaling web applications</li>
-        <li>Experienced in crafting interactive and intuitive user interfaces</li>
-        <li>Proficient in designing, developing, and optimizing RESTFul APIs</li>
+        <li><span id="yearsExperience">8</span> years of web experience; sole engineering owner of a multi-tenant school
+          management platform taken from prototype to live pilot</li>
+        <li>Per-institution data isolation across 7 user roles, enforced by about 2,650 lines of tested Firestore
+          security rules</li>
+        <li>88% smaller entry bundle through lazy-loaded routes and query caching</li>
+        <li>Spec-first AI-agent development with automated guard tests across 69 merged pull requests</li>
       </ul>
 
     </section>
@@ -95,9 +98,9 @@
     <div class="line-break"></div>
     <div class="line-break"></div>
 
-    <section id="stack">
-      <h2>Tech Stack</h2>
-      <div id="techStackContainer" class="wrapper--techstack__items"></div>
+    <section id="projects">
+      <h2>Selected Work</h2>
+      <div id="projectsContainer" class="wrapper--projects"></div>
     </section>
 
     <div class="line-break"></div>
@@ -111,9 +114,24 @@
     <div class="line-break"></div>
     <div class="line-break"></div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div id="projectsContainer" class="wrapper--techstack__items"></div>
+    <section id="how-i-work">
+      <h2>How I Work</h2>
+      <ul class="how-i-work--list">
+        <li><strong>Spec first.</strong> I write down the problem, the data model and the security rules before
+          building a major feature.</li>
+        <li><strong>AI agents, human ownership.</strong> I direct AI coding agents (Claude Code, GitHub Copilot) and
+          own the architecture and review; automated guard tests catch what review misses.</li>
+        <li><strong>Releases you can trust.</strong> Semantic versioning, a changelog, and GitHub Actions checks on
+          every pull request and release.</li>
+      </ul>
+    </section>
+
+    <div class="line-break"></div>
+    <div class="line-break"></div>
+
+    <section id="stack">
+      <h2>Tech Stack</h2>
+      <div id="techStackContainer" class="wrapper--techstack__items"></div>
     </section>
 
     <div class="line-break"></div>
